@@ -1,0 +1,60 @@
+Literature Survey:
+
+Proxy Reencryption: In ABE with outsourced decryption, a
+user provides the cloud with a transformation key that allows
+the cloud to translate an ABE ciphertext on message into
+a simple ciphertext on the same , without learning anything
+about . This is reminiscent of the concept of proxy reencryption [1], [2]. Proxy reencryption allows a proxy, using a reencryption key, to transform an encryption of under Alice’s public key into an encryption of the same under Bob’s public key without the proxy learning anything about the encrypted message . We emphasize that in the model of proxy reencryption, verifiability of the proxy’s transformation cannot be
+achieved. 
+
+Pairing Delegation: Pairing delegation [3], [4] enables a
+client to outsource the computation of parings to another entity.
+However, the schemes proposed in [25], [26] still require the
+client to compute multiple exponentiations in the target group
+for every pairing it outsources. Most importantly, when using
+paring delegation in the decryption of ABE ciphertexts, the
+amount of computation of the client is still proportional to
+the size of the access policy. 
+
+Noninteractive Verifiable Computation: Noninteractive verifiable computation [5], [6] enables a computationally weak
+client to outsource the computation of a function to one or more
+workers. The workers return the result of the function evaluation as well as a noninteractive proof that the computation of
+the function was carried out correctly
+
+Add these Referecnce in references and plz provide sequencial numbering:
+[1] M. Blaze, G. Bleumer, and M. Strauss, “Divertible protocols and
+atomic proxy cryptography,” in Proc. EUROCRYPT, 1998, pp.
+127–144.
+[2] G. Ateniese, K. Fu, M. Green, and S. Hohenberger, “Improved proxy
+re-encryption schemes with applications to secure distributed storage,”
+in Proc. NDSS, San Diego, CA, USA, 2005.
+[3] B. Chevallier-Mames, J.-S. Coron, N. McCullagh, D. Naccache,
+and M. Scott, “Secure delegation of elliptic-curve pairing,” in Proc.
+CARDIS, 2010, pp. 24–35.
+[4] B. G. Kang, M. S. Lee, and J. H. Park, “Efficient delegation of pairing computation,” IACR Cryptology ePrint Archive, vol. 2005, p. 259,
+2005.
+[5] R. Gennaro, C. Gentry, and B. Parno, “Non-interactive verifiable
+computing: Outsourcing computation to untrusted workers,” in Proc.
+CRYPTO, 2010, pp. 465–482.
+[6] K.-M. Chung, Y. T. Kalai, and S. P. Vadhan, “Improved delegation of
+computation using fully homomorphic encryption,” in Proc. CRYPTO,
+2010, pp. 483–501.
+
+
+Future Enhancement:
+As Future work, it can be implemented on diffrent formats of file and even work on provinding security on images. And also we can implement efficient search mechanism for encrypted data and also can provide multi level authority for user role accessbility.
+
+
+Objectives:
+The main objective of project is to provide better information security to protect data from unauthorised usage.Attribute-based encryption (ABE) is a public-keybased one-to-many encryption that allows users to encrypt and decrypt data based on user attributes.  One of the main efficiency drawbacks of the existing ABE schemes is that decryption involves expensive pairing operations and the number of such operations grows with
+the complexity of the access policy. Security of an ABE system with outsourced decryption ensures that an adversary (including a malicious cloud) will not be able to learn anything about the encrypted message; however, it does not guarantee the correctness of the transformation done by the cloud. In this project, we consider a new requirement of ABE
+with outsourced decryption: verifiability. Informally, verifiability
+guarantees that a user can efficiently check if the transformation
+is done correctly. 
+
+
+
+
+
+
+
