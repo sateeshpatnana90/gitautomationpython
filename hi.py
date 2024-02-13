@@ -3,3 +3,4 @@ y = int(input("enter value"))
 z = x+y
 print(z)
 print("from machine")
+print("from cloud")
